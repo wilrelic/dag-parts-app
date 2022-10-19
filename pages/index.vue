@@ -72,7 +72,7 @@ const getItems = () => {
 <template>
     <div class="p-6">
         <div class="flex mx-auto space-x-4 mb-4 max-w-screen-md">
-            <input type="text" placeholder="Search Part No./Name/SKU etc" v-model="searchParams" @keyup.enter="getItems" class="dark:text-black py-1 px-2 w-full rounded">
+            <input type="text" placeholder="Search Part No./Name/SKU etc" v-model="searchParams" @keyup.enter="getItems" class="dark:text-black py-1 px-2 w-full rounded" autofocus>
             <button class="bg-red-800 px-4 py-2 rounded" @click="getItems"><span v-if="!isLoading">Search</span><span v-if="isLoading">Loading..</span></button>
         </div>
 
