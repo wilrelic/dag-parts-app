@@ -90,7 +90,7 @@ const getItems = () => {
                             <h3 class="font-semibold">
                                 {{ product.product_title.slice(0,70) + '...' }}
                             </h3>
-                            <p class="text-red-800 font-semibold text-md">
+                            <p class="text-red-600 font-semibold text-md">
                                 {{ '$' + product.app_sale_price }}
                             </p>
                         </div>
@@ -107,9 +107,9 @@ const getItems = () => {
                         <img :src="product.thumbnail" :alt="product.description" width="100" class="object-contain mr-4 max-h-24">
                         <div>
                             <h3 class="font-semibold">
-                                {{ product.name || product.description || 'Empty Title Error' }}
+                                {{ product.name }}
                             </h3>
-                            <p class="text-red-800 font-semibold text-md">
+                            <p class="text-red-600 font-semibold text-md">
                                 {{ product.price }}
                             </p>
                         </div>
@@ -128,7 +128,7 @@ const getItems = () => {
                             <h3 class="font-semibold">
                                 {{ product.product_title.slice(0,70) + '...' }}
                             </h3>
-                            <p class="text-red-800 font-semibold text-md">
+                            <p class="text-red-600 font-semibold text-md">
                                 {{ ' $' + (product.app_sale_price*1.61).toFixed(2) }}
                             </p>
                         </div>
